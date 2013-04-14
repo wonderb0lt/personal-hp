@@ -13,15 +13,20 @@
         background-color: #F9F9F9;
       }
 
-      #introduction {
-        font-size: 1.1em;
-        line-height: 150%;
+      .centered { /* Isn't there an easier way to do this? ._. */
+        text-align: center;
       }
+
       #container {
         margin: 15px auto;
         max-width: 800px;
       }
 
+      #quick-info {
+        font-size: 1.1em;
+        line-height: 150%;
+      }
+      
       #myname {
         margin-bottom: 0;
       }
@@ -30,34 +35,71 @@
         color: #777777;
       }
 
-      .centered { /* Isn't there an easier way to do this? ._. */
-        text-align: center;
+      section {
+        margin-top: 15px;
+      }      
+
+      code {
+        color: #444444;
       }
     </style>
   </head>
   <body>
     <div id="container">
-      <section id="introduction" class="centered fancy">
-        <img  src="http://www.gravatar.com/avatar/b9cab9157307b07ac35423032c446ea1.png?s=200" 
-              alt="A picture of me, Patrick Stegmann"/>
-        
-        <h1 id="myname">Patrick Stegmann</h1>
-        <span>
-          Frankfurt am Main based developer, proficient in Java, Python and <!-- I'm dead serious: --> JavaScript/<a href="http://coffeescript.org/">CoffeeScript</a>
-        </span>
-        <br />
-        <address>
-            <i class="icon-phone"></i>&nbsp;0176 / 104 530 15
-            &nbsp;&ndash;&nbsp;
-            <i class="icon-github"></i>&nbsp;<a href="https://github.com/wonderb0lt">wonderb0lt</a>
-            &nbsp;&ndash;&nbsp;
-            <i class="icon-envelope"></i>&nbsp;<a href="mailto:info@patrick-stegmann.de">info@patrick-stegmann.de</a>
-        </address>
+      <section id="introduction" >
+        <header id="quick-info" class="centered">
+          <img  src="http://www.gravatar.com/avatar/b9cab9157307b07ac35423032c446ea1.png?s=200" 
+                alt="A picture of me, Patrick Stegmann"/>
+          
+          <h1 id="myname">Patrick Stegmann</h1>
+          <span>
+            Frankfurt am Main based developer, proficient in Java, Python and <!-- I'm dead serious: --> JavaScript/<a href="http://coffeescript.org/">CoffeeScript</a>
+          </span>
+          <br />
+          <address>
+              <i class="icon-phone"></i>&nbsp;0176 / 104 530 15
+              &nbsp;&ndash;&nbsp;
+              <i class="icon-github"></i>&nbsp;<a href="https://github.com/wonderb0lt">wonderb0lt</a>
+              &nbsp;&ndash;&nbsp;
+              <i class="icon-envelope"></i>&nbsp;<a href="mailto:info@patrick-stegmann.de">info@patrick-stegmann.de</a>
+          </address>
+        </header>
+
+        <p id="introductionary-paragraph">Hello there. I'm that bearded young man on the picture above. I currently live in <a href="http://goo.gl/maps/0k2OY">Frankfurt am Main, Germany</a> and am currently employed as a software developer at <a href="http://cosee.biz">CoSee GmbH</a>. My work there is mainly focussed on writing JEE applications, though Python has been a steady companion.</p>
       </section>
 
-      <p>Hello there. I'm that bearded young man on the picture above. I currently live in <a href="http://goo.gl/maps/0k2OY">Frankfurt am Main, Germany</a> and am currently employed as a software developer at <a href="http://cosee.biz">CoSee GmbH</a>. My work there is mainly focussed on writing JEE applications, though Python has been a steady companion.</p>
      
-      <!-- To do: write EVEN MORE -->
+      <section id="mindset">
+        <h2>Mindset</h2>
+        <p>I reckon my greatest skill is my love for clean, good code. Whatever languages and frameworks I might encounter in my personal and professional future, this skill will always accompany me. Readability induces maintainability induces good code induces less headache. Simple as that.</p>
+
+        <p>To give you an idea of how I operate, I'll provide you with a set of things I find worth mentioning about me</p>
+
+        <h4>Meta</h4>
+        <ul>
+          <li><abbr title="Behavioural driven development">BDD</abbr></li>
+          <li>I love git</li> <!-- I would hire myself right away if I read that. ;) -->
+          <li>I can do nice things with the shell!</li>
+          <li>I'd rather use a good library than write but one unnnessecary line of code</li>
+        </ul>
+
+        <h4>Java</h4>
+        <ul>
+          <li>I have worked with the whole stack, from JavaME over Android to Java SE and JEE 6</li>
+          <li><a href="http://maven.apache.org/">Maven</a>, <a href="https://code.google.com/p/guava-libraries/">Guava</a>, <a href="http://hamcrest.org/JavaHamcrest/">Hamcrest</a>, 
+            and <a href="https://code.google.com/p/mockito/">Mockito</a> are in my standard toolchain</li>
+          <li>I don't overengineer. You won't see an <code>AbstractListItemViewHolderListenerFactory</code> from me. Promise.</li>
+          <li><a href="http://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683">Effective Java</a> is my bible, and Joshua Bloch a personal inspiration when it comes to Java</li>
+        </ul>
+
+        <h4>Python</h4>
+        <ul>
+          <li><a href="http://blog.startifact.com/posts/older/what-is-pythonic.html">Pythonicity</a> is not just a funny word to me</li>
+          <li>I've worked with <a href="http://flask.pocoo.org/">Flask</a>/<a href="http://jinja.pocoo.org/docs/">Jinja2</a> for web pages.</li>
+          <li>I'll write <a href="http://pythonhosted.org/behave/">features</a> instead of unit tests.</li>
+          <li>Python is a multi-purpose language, not just "something to write little scripts with"</li>
+        </ul>
+      </section>
       <script src="http://code.jquery.com/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
     </div>
