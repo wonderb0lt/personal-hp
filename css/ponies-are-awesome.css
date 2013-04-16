@@ -20,6 +20,11 @@ body {
   border-radius: 6px;
 }
 
+.ironic-remark {
+  color: #828282;
+  text-shadow: 1px 1px 0px #E8E8E8;  
+}
+
 section {
   margin-top: 50px;
 }      
