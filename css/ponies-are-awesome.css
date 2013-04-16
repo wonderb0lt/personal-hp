@@ -61,5 +61,6 @@ address {
 }
 
 #toc {
-  width: 15%;
+  display: none;
+  width: auto;
 }
