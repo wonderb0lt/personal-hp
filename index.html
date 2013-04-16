@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <style type="text/css">
       body {
@@ -36,7 +37,7 @@
       }
 
       section {
-        margin-top: 15px;
+        margin-top: 50px;
       }      
 
       code {
@@ -50,6 +51,17 @@
       footer {
         margin-top: 50px;
       }
+
+      .fancy-border {
+        border: 1px solid #ccc;
+        webkit-border-radius: 6px;
+        moz-border-radius: 6px;
+        border-radius: 6px;
+
+      }
+      #toc {
+        width: 15%;
+      }
     </style>
   </head>
   <body>
@@ -57,7 +69,8 @@
       <section id="introduction" >
         <header id="quick-info" class="centered">
           <img  src="http://www.gravatar.com/avatar/b9cab9157307b07ac35423032c446ea1.png?s=200" 
-                alt="A picture of me, Patrick Stegmann"/>
+                alt="A picture of me, Patrick Stegmann"
+                class="fancy-border"/>
           
           <h1 id="myname">Patrick Stegmann</h1>
           <span>
@@ -74,7 +87,12 @@
         </header>
 
         <p id="introductionary-paragraph">Hello there. I'm that bearded young man on the picture above. I currently live in <a href="http://goo.gl/maps/0k2OY">Frankfurt am Main, Germany</a> and am currently employed as a software developer at <a href="http://cosee.biz">CoSee GmbH</a>. My work there is mainly focussed on writing JEE applications, though Python has been a steady companion.</p>
+
+        <!-- TODO: This doesn't really belong in the introductionary section -->
+        <div id="toc" class="fancy-border" />
+      
       </section>
+
 
      
       <section id="mindset">
@@ -144,11 +162,22 @@
         <hr />
         <small>
           Layout based on <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> and <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> &ndash; <span title="It's not my fault if your browser can't handle it">HTML5 compliant</span>
-        </small>
+      </small>
       </footer>
-      
-      <script src="http://code.jquery.com/jquery.js"></script>
-      <script src="js/bootstrap.min.js"></script>
     </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script src="js/jquery.tocify.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script lang="text/javascript">
+              $(function() {
+                  // The default settings are pretty questionable...
+                  $("#toc").tocify({'selectors': 'h2', 
+                                    'extendPage': false,
+                                    'highlightDefault': false});
+              });
+             
+    </script>
   </body>
 </html>
