@@ -1,0 +1,60 @@
+/*
+  I'm so bored I even keep my 70 lines CSS files in order of appearance.
+*/
+
+
+body {
+  font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro';
+  font-size: 1.05em;
+  background-color: #F9F9F9;
+}
+
+.centered { /* Isn't there an easier way to do this? ._. */
+  text-align: center;
+}
+
+.fancy-border {
+  border: 1px solid #ccc;
+  webkit-border-radius: 6px;
+  moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+section {
+  margin-top: 50px;
+}      
+
+code {
+  color: #444444;
+}
+
+cite {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+
+#container {
+  margin: 15px auto;
+  max-width: 800px;
+}
+
+#quick-info {
+  font-size: 1.1em;
+  line-height: 150%;
+}
+
+#myname {
+  margin-bottom: 0;
+}
+
+address {
+  color: #777777;
+}
+
+#toc {
+  width: 15%;
+}
