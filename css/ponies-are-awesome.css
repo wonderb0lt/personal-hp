@@ -57,9 +57,14 @@ footer {
 }
 
 address {
+  margin-top: 3px;
   color: #777777;
 }
 
+.address-dash {
+  margin-left: 2px;
+  margin-right: 2px;
+}
 #toc {
   visibility: hidden;
   display: inline-block;
