@@ -139,18 +139,18 @@
       </footer>
     </div>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
     <script src="js/jquery.tocify.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
               $(function() {
+                  var toc = $("#toc");
                   // The default settings are pretty questionable...
-                  var toc = 
-                  $("#toc").tocify({'selectors': 'h2', 
-                                    'extendPage': false,
-                                    'highlightDefault': false}).css('display', 'visible');
-
+                  toc.tocify({'selectors': 'h2',
+                              'extendPage': false,
+                              'highlightDefault': false});
+                  toc.css('visibility', 'visible');
               });
              
     </script>
