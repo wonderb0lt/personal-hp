@@ -69,3 +69,39 @@ address {
   visibility: hidden;
   display: inline-block;
 }
+
+/* Experiences */
+
+li.experience {
+  border-bottom: 1px solid #ccc;
+  list-style-type: none;
+  padding: 5px 0 5px;
+  margin-bottom: 10px;
+}
+
+h3.experience-title {
+  line-height: 15px;
+}
+
+h4.experience-subtitle {
+  font-size: 0.9em;
+}
+
+span.experience-timeframe {
+  float: right;
+  background-color: #E0E0E0;
+  text-transform: uppercase;
+  margin-top: 15px; /* Meh - can't I do that more dynamic? */
+}
+
+#dot1 {
+  color: #06318E;
+}
+
+#dot2 {
+  color: #FAB60B;
+}
+
+#dot3 {
+  color: #AC0001;
+}
