@@ -1,12 +1,11 @@
-/*
-  I'm so bored I even keep my 70 lines CSS files in order of appearance.
-*/
-
-
 body {
   font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro';
   font-size: 1.05em;
   background-color: #F9F9F9;
+}
+
+#header p {
+    display: block;
 }
 
 .centered { /* Isn't there an easier way to do this? ._. */
