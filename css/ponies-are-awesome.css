@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro';
   font-size: 1.05em;
   background-color: #F9F9F9;
 }
@@ -10,6 +10,18 @@ body {
 
 .centered { /* Isn't there an easier way to do this? ._. */
   text-align: center;
+}
+
+.fancy-border {
+  border: 1px solid #ccc;
+  webkit-border-radius: 6px;
+  moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.ironic-remark {
+  color: #828282;
+  text-shadow: 1px 1px 0px #E8E8E8;  
 }
 
 section {
@@ -51,6 +63,34 @@ address {
 .address-dash {
   margin-left: 2px;
   margin-right: 2px;
+}
+#toc {
+  visibility: hidden;
+  display: inline-block;
+}
+
+/* Experiences */
+
+li.experience {
+  border-bottom: 1px solid #ccc;
+  list-style-type: none;
+  padding: 5px 0 5px;
+  margin-bottom: 20px;
+}
+
+h3.experience-title {
+  line-height: 15px;
+}
+
+h4.experience-subtitle {
+  font-size: 0.9em;
+}
+
+span.experience-timeframe {
+  float: right;
+  background-color: #E0E0E0;
+  text-transform: uppercase;
+  margin-top: 15px; /* Meh - can't I do that more dynamic? */
 }
 
 #dot1 {
