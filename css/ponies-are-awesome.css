@@ -1,7 +1,7 @@
 body {
   font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro';
-  font-size: 1.05em;
   background-color: #F9F9F9;
+  font-size: 150%; /* I find that Bootstrap makes the font waaaay to small, so let's boost it */
 }
 
 #header p {
@@ -19,35 +19,16 @@ body {
   border-radius: 6px;
 }
 
-.ironic-remark {
-  color: #828282;
-  text-shadow: 1px 1px 0px #E8E8E8;  
-}
-
-section {
-  margin-top: 50px;
-}      
-
-code {
-  color: #444444;
-}
-
-cite {
-  font-weight: bold;
-}
-
 footer {
   margin-top: 50px;
 }
 
 
 #container {
-  margin: 15px auto;
-  max-width: 800px;
+  margin: 10px 30%;
 }
 
 #quick-info {
-  font-size: 1.1em;
   line-height: 150%;
 }
 
@@ -58,39 +39,12 @@ footer {
 address {
   margin-top: 3px;
   color: #777777;
+  font-size: 150%;
 }
 
 .address-dash {
   margin-left: 2px;
   margin-right: 2px;
-}
-#toc {
-  visibility: hidden;
-  display: inline-block;
-}
-
-/* Experiences */
-
-li.experience {
-  border-bottom: 1px solid #ccc;
-  list-style-type: none;
-  padding: 5px 0 5px;
-  margin-bottom: 20px;
-}
-
-h3.experience-title {
-  line-height: 15px;
-}
-
-h4.experience-subtitle {
-  font-size: 0.9em;
-}
-
-span.experience-timeframe {
-  float: right;
-  background-color: #E0E0E0;
-  text-transform: uppercase;
-  margin-top: 15px; /* Meh - can't I do that more dynamic? */
 }
 
 #dot1 {
