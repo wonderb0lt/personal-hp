@@ -13,7 +13,7 @@ body {
 #thestuff {
     display: grid;
     height: 100vh;
-    margin: 0;
+    margin: 0 25vw;
     place-items: center;
     align-content: start;  
 }

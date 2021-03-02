@@ -1,6 +1,7 @@
 @font-face {
   font-family: "lato";
   src: url("lato-regular.ttf");  
+  font-display: swap;
 }
 
 body {
@@ -8,5 +9,18 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 5em;
+}
+
+p.explain {
+  font-size: 2em;
+  color: rgb(104, 106, 114);
+}
+
+a {
+  color: rgb(85, 94, 131);
+}
+
+.zhongwen {
+  white-space: nowrap;
 }
