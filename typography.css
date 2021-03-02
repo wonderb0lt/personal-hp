@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "lato";
+  src: url("lato-regular.ttf");  
+}
+
+body {
+  font-family: 'lato', 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}

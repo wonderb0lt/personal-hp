@@ -11,8 +11,9 @@ body {
 }
 
 #thestuff {
-  margin: auto; 
-  width: 500px; 
-  text-align: center; 
-  font-family: sans-serif;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+    align-content: start;  
 }
